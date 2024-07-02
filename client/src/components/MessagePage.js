@@ -11,7 +11,7 @@ import { FaVideo } from "react-icons/fa6";
 import uploadFile from '../helpers/uploadFiles';
 import { IoClose } from "react-icons/io5";
 import Loading from './Loading';
-import backgroundImage from '../assets/wallpapers.jpeg';
+import backgroundImage from '../assets/wallpapers.jpeg'
 import { IoMdSend } from "react-icons/io";
 import moment from 'moment'
 

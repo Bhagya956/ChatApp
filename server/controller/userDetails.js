@@ -1,9 +1,34 @@
-const getUserDetailsFromToken = require("../helpers/getUserDetailsFromToken")
-const User = require('../models/UserModel')
+// const getUserDetailsFromToken = require("../helpers/getUserDetailsFromToken")
+// const User = require('../models/UserModel')
 
+
+// async function userDetails(request,response){
+//     try{
+//         const token = request.cookies.token || ""
+
+//         const user = await getUserDetailsFromToken(token)
+
+//         return response.status(200).json({
+//             message : "user details",
+//             data : user
+//         })
+
+//     } catch (error){
+//         return response.status(500).json({
+//             message : error.message || error,
+//             error : true
+
+//         })
+//     }
+// }
+
+// module.exports = userDetails
+
+
+const getUserDetailsFromToken = require("../helpers/getUserDetailsFromToken")
 
 async function userDetails(request,response){
-    try{
+    try {
         const token = request.cookies.token || ""
 
         const user = await getUserDetailsFromToken(token)
@@ -12,12 +37,10 @@ async function userDetails(request,response){
             message : "user details",
             data : user
         })
-
-    } catch (error){
+    } catch (error) {
         return response.status(500).json({
             message : error.message || error,
             error : true
-
         })
     }
 }

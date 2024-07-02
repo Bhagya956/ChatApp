@@ -58,6 +58,8 @@ const RegisterPage = () => {
     e.preventDefault()
     e.stopPropagation()
 
+    //const URL = "https://chatapp-2-035r.onrender.com/api/register"
+
     const URL = `${process.env.REACT_APP_BACKEND_URL}/api/register`
 
     try{

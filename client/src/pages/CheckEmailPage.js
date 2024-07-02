@@ -27,6 +27,8 @@ const CheckEmailPage = () => {
     e.preventDefault()
     e.stopPropagation()
 
+    // const URL = "https://chatapp-2-035r.onrender.com/api/email"
+
     const URL = `${process.env.REACT_APP_BACKEND_URL}/api/email`
 
     try {
