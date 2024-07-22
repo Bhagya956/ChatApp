@@ -263,7 +263,6 @@ const Home = () => {
     })
 
     socketConnection.on('onlineUser',(data)=>{
-      console.log(data)
       dispatch(setOnlineUser(data))
     })
 
